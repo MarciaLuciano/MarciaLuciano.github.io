@@ -33,6 +33,13 @@
 
 <a-scene >
       <a-sphere position="-1.5 -1.0 -5"  color="green" radius="0.5" static-body wasd-controls></a-sphere>
+  
+   <a-assets>
+        <a-asset-item id="ball" src="https://github.com/enmilioliveira/enmilioliveira.github.io/blob/master/circulo.glb"></a-asset-item>
+      </a-assets>
+
+      <a-entity gltf-model="#ball" position="0.0 -1.5 -10.0" scale="7.5 5 7.5" static-body wasd-controls></a-entity>
+
         
       <a-cylinder position="2.5 -2.0 -13"  color="blue" width="2.0" height="6.0" depth="7" certo 
       static-body physics-collider="ignoreSleep:true"></a-cylinder>
